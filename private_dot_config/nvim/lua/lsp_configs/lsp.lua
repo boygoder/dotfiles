@@ -57,15 +57,15 @@ local setup_lsps = function()
 
     for _, server in ipairs({
         "bashls",
-        "cmake",
-        "dockerls",
+        --"cmake",
+        --"dockerls",
         "dotls",
-        "gopls",
-        "jsonls",
+        --"gopls",
+        --"jsonls",
         "pyright",
-        "tsserver",
+        --"tsserver",
         "vimls",
-        "yamlls",
+        --"yamlls",
     }) do
         lspconfig[server].setup(opts)
     end
