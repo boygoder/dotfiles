@@ -130,7 +130,21 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 GIT_PROMPT_THEME=Solarized
+# dealii
+export PATH=/usr/local/dealii-8.1.0:$PATH
+DEAL_II_DIR=/usr/local/dealii-8.1.0
+# AFEPack
 
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/dealii-8.1.0/lib/:$LD_LIBRARY_PATH
+
+# export LD_LIBRARY_PATH=/usr/local/dealii-9.4.0/lib/:$LD_LIBRARY_PATH
+export AFEPACK_PATH="/usr/local/share/AFEPack"
+export AFEPACK_TEMPLATE_PATH="/triangle/"
+
+# clash
 export https_proxy=http://127.0.0.1:7890;
 export http_proxy=http://127.0.0.1:7890;
 export all_proxy=socks5://127.0.0.1:7890
+# spack
+#source ~/spack/share/spack/setup-env.sh
